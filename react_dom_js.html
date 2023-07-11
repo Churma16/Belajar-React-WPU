@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Belajar React</title>
-</head>
-<body>
-    <div id="root">
+    <head>
+        <title>Belajar React</title>
+    </head>
+    <body>
+        <div id="root"></div>
 
-    </div>
+        <!-- react -->
+        <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+        <!-- react-dom -->
+        <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+        <!-- babel -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- react -->
-    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
-    <!-- react-dom -->
-    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
-    <!-- babel -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <script type="text/babel">
-        const container = document.getElementById('root');
-        const root = ReactDOM.createRoot(container);
-        root.render(<h1>Belajar React</h1>);
-    </script>
-</body>
+        <script type="text/babel">
+            const container = document.getElementById("root");
+            const root = ReactDOM.createRoot(container);
+            root.render(
+                <>
+                    <h1>Belajar React</h1>
+                    <img src="https://source.unsplash.com/random/300x300"></img>
+                    <p>Ini Adalah Foto Dari Unsplash</p>
+                </>
+            );
+        </script>
+    </body>
 </html>
