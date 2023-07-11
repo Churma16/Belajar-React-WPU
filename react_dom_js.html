@@ -5,16 +5,20 @@
 </head>
 <body>
     <div id="root">
-        
+
     </div>
 
     <!-- react -->
     <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
     <!-- react-dom -->
     <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <!-- babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/javascript">
+    <script type="text/babel">
         const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<h1>Belajar React</h1>);
     </script>
 </body>
 </html>
