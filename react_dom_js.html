@@ -16,9 +16,12 @@
         <script type="text/babel">
             const container = document.getElementById("root");
             const root = ReactDOM.createRoot(container);
+            // 1. Hanya mengembalikan satu elemen
+            // 2. Semua Tag HTML Harus Ditutup
+            // 3. Attribute menggunakan camelCase, Contoh: class -> className
             root.render(
                 <>
-                    <h1>Belajar React</h1>
+                    <h1 className="heading">Belajar React</h1>
                     <img src="https://source.unsplash.com/random/300x300"></img>
                     <p>Ini Adalah Foto Dari Unsplash</p>
                 </>
